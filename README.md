@@ -37,3 +37,53 @@ O objetivo deste projeto é criar uma API RESTful que permita o cadastro de info
 - **Implantação Simples**: O Apache Tomcat é uma escolha comum para implantação de aplicativos Java.
 
 Em resumo, este projeto demonstra a criação de uma API de cadastro para uma pizzaria usando Java, Spring Boot e Maven, com foco na organização, testes e implantação eficientes. Essa solução permite que a pizzaria gerencie os dados dos clientes de forma simples e eficaz.
+
+```mermaid
+graph TD
+  A[Cadastro Basico Dio 2023] --> B[API RESTful ]
+  A --> C[Objetivo do Projeto]
+  A --> D[Arquitetura do Projeto]
+  D --> E[Estrutura do Projeto]
+  D --> F[Maven para Gerenciamento de Dependências]
+  D --> G[Modelagem de Dados]
+  D --> H[Camada de Repositório]
+  D --> I[Camada de Serviço]
+  D --> J[Controladores]
+  D --> K[Teste Local com Postman]
+  D --> L[Implantação no Apache Tomcat]
+  C --> M[Benefícios]
+
+  B --> LinguagemJava[<b>Linguagem de Programação:</b> Java]
+  B --> Maven[<b>Gerenciamento de Dependências:</b> Maven]
+  B --> SpringBoot[<b>Framework:</b> Spring Boot]
+  B --> AmbienteVSCode[<b>Ambiente de Desenvolvimento:</b> Visual Studio Code]
+  B --> Postman[<b>Teste de API:</b> Postman]
+  B --> Tomcat[<b>Servidor de Implantação:</b> Apache Tomcat]
+
+  E --> Pacotes[Pacotes]
+  Pacotes --> Controller[controller]
+  Pacotes --> Exception[exception]
+  Pacotes --> Repository[repository]
+  Pacotes --> Model[model]
+
+  G --> Cadastro[Cadastro]
+  G --> JPA[JPA]
+
+  H --> JpaRepository[JpaRepository]
+  H --> GlobalExceptions[Globais Exceptions]
+
+  I --> LógicaDeNegócios[Lógica de Negócios]
+
+  J --> Endpoints[Endpoints da API]
+
+  K --> PostmanTool[Postman]
+
+  L --> ApacheTomcat[Apache Tomcat]
+
+  M --> Maintenance[<b>Facilidade de Manutenção</b>]
+  M --> Structure[<b>Estrutura Organizada</b>]
+  M --> EfficientTesting[<b>Testes Eficientes</b>]
+  M --> SimpleDeployment[<b>Implantação Simples</b]
+
+```
+
